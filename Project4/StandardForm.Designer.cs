@@ -36,7 +36,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Project4.Properties.Resources.hexaformLogo;
-            this.pictureBox1.Location = new System.Drawing.Point(60, 27);
+            this.pictureBox1.Location = new System.Drawing.Point(79, 29);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(326, 50);
             this.pictureBox1.TabIndex = 0;
@@ -58,7 +58,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(446, 347);
+            this.ClientSize = new System.Drawing.Size(484, 347);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "StandardForm";

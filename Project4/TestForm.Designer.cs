@@ -44,9 +44,22 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(166, 152);
+            this.listBox1.Items.AddRange(new object[] {
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.listBox1.Location = new System.Drawing.Point(164, 132);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 17);
+            this.listBox1.Size = new System.Drawing.Size(105, 160);
             this.listBox1.TabIndex = 3;
             // 
             // TestForm

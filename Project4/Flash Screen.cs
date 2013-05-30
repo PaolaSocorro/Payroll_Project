@@ -9,11 +9,16 @@ using System.Windows.Forms;
 
 namespace Project4
 {
-    public partial class Flash_Screen : Form
+    public partial class splashForm : StandardForm
     {
-        public Flash_Screen()
+        public splashForm()
         {
             InitializeComponent();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

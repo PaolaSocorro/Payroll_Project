@@ -30,54 +30,64 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eXITToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.summaryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calculateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.frontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.createChecksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.webPageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
-            this.IDtextBox1 = new System.Windows.Forms.TextBox();
-            this.DepartmentgroupBox = new System.Windows.Forms.GroupBox();
-            this.ProductionradioButton = new System.Windows.Forms.RadioButton();
-            this.SalesradioButton = new System.Windows.Forms.RadioButton();
-            this.RDradioButton = new System.Windows.Forms.RadioButton();
-            this.AccountingradioButton = new System.Windows.Forms.RadioButton();
-            this.HumanradioButton = new System.Windows.Forms.RadioButton();
-            this.PositioncomboBox = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.CalculateButton = new System.Windows.Forms.Button();
-            this.DepartmentReportButton = new System.Windows.Forms.Button();
-            this.Clearbutton = new System.Windows.Forms.Button();
             this.EXITbutton = new System.Windows.Forms.Button();
+            this.monthsComboBox = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.processingTextBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.processButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.FSAtextBox = new System.Windows.Forms.TextBox();
-            this.FSAcheckBox = new System.Windows.Forms.CheckBox();
-            this.PlancheckBox = new System.Windows.Forms.CheckBox();
-            this.PlantextBox = new System.Windows.Forms.TextBox();
-            this.LItextBox = new System.Windows.Forms.TextBox();
-            this.MedicaltextBox = new System.Windows.Forms.TextBox();
-            this.LIcheckBox = new System.Windows.Forms.CheckBox();
-            this.MedicalcheckBox = new System.Windows.Forms.CheckBox();
+            this.fourkTextBox = new System.Windows.Forms.TextBox();
+            this.four01kCheckBox = new System.Windows.Forms.CheckBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.positionLabel = new System.Windows.Forms.Label();
+            this.NameLabel = new System.Windows.Forms.Label();
+            this.fsaLabel = new System.Windows.Forms.Label();
+            this.dentalLabel = new System.Windows.Forms.Label();
+            this.lifeinsuLabel = new System.Windows.Forms.Label();
+            this.medLabel = new System.Windows.Forms.Label();
+            this.rateLabel = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.departmentLabel = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.salaryRateLabel = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.EmployeeReportbutton = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.employeeBox = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.update401kButton = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.reportComboBox = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.reportButton = new System.Windows.Forms.Button();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.checksButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
-            this.DepartmentgroupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -85,30 +95,23 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.toolsToolStripMenuItem,
-            this.editToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(412, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(484, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.printToolStripMenuItem,
             this.eXITToolStripMenuItem,
             this.saveToolStripMenuItem,
+            this.printToolStripMenuItem,
             this.exitToolStripMenuItem1});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "&File";
-            // 
-            // printToolStripMenuItem
-            // 
-            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
-            this.printToolStripMenuItem.Text = "&Print";
             // 
             // eXITToolStripMenuItem
             // 
@@ -122,11 +125,18 @@
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.saveToolStripMenuItem.Text = "&Save";
             // 
+            // printToolStripMenuItem
+            // 
+            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.printToolStripMenuItem.Text = "&Print";
+            // 
             // exitToolStripMenuItem1
             // 
             this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
             this.exitToolStripMenuItem1.Size = new System.Drawing.Size(103, 22);
             this.exitToolStripMenuItem1.Text = "E&xit";
+            this.exitToolStripMenuItem1.Click += new System.EventHandler(this.EXITbutton_Click);
             // 
             // toolsToolStripMenuItem
             // 
@@ -134,7 +144,8 @@
             this.addToolStripMenuItem1,
             this.deleteToolStripMenuItem,
             this.summaryToolStripMenuItem,
-            this.calculateToolStripMenuItem});
+            this.calculateToolStripMenuItem,
+            this.createChecksToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
             this.toolsToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.toolsToolStripMenuItem.Text = "&Tools";
@@ -142,60 +153,37 @@
             // addToolStripMenuItem1
             // 
             this.addToolStripMenuItem1.Name = "addToolStripMenuItem1";
-            this.addToolStripMenuItem1.Size = new System.Drawing.Size(125, 22);
-            this.addToolStripMenuItem1.Text = "&Add";
+            this.addToolStripMenuItem1.Size = new System.Drawing.Size(172, 22);
+            this.addToolStripMenuItem1.Text = "&Add Employee";
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
-            this.deleteToolStripMenuItem.Text = "&Delete";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.deleteToolStripMenuItem.Text = "&Remove Employee";
             // 
             // summaryToolStripMenuItem
             // 
             this.summaryToolStripMenuItem.Name = "summaryToolStripMenuItem";
-            this.summaryToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.summaryToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.summaryToolStripMenuItem.Text = "&Summary";
             // 
             // calculateToolStripMenuItem
             // 
             this.calculateToolStripMenuItem.Name = "calculateToolStripMenuItem";
-            this.calculateToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
-            this.calculateToolStripMenuItem.Text = "&Calculate";
+            this.calculateToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.calculateToolStripMenuItem.Text = "&Process";
             // 
-            // editToolStripMenuItem
+            // createChecksToolStripMenuItem
             // 
-            this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addToolStripMenuItem,
-            this.frontToolStripMenuItem,
-            this.colorToolStripMenuItem});
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
-            this.editToolStripMenuItem.Text = "&Edit";
-            // 
-            // addToolStripMenuItem
-            // 
-            this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
-            this.addToolStripMenuItem.Text = "Clear";
-            // 
-            // frontToolStripMenuItem
-            // 
-            this.frontToolStripMenuItem.Name = "frontToolStripMenuItem";
-            this.frontToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
-            this.frontToolStripMenuItem.Text = "&Front";
-            // 
-            // colorToolStripMenuItem
-            // 
-            this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
-            this.colorToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
-            this.colorToolStripMenuItem.Text = "&Color";
+            this.createChecksToolStripMenuItem.Name = "createChecksToolStripMenuItem";
+            this.createChecksToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.createChecksToolStripMenuItem.Text = "&Create Checks";
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem,
-            this.webPageToolStripMenuItem});
+            this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
@@ -203,336 +191,432 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "About";
             // 
-            // webPageToolStripMenuItem
+            // EXITbutton
             // 
-            this.webPageToolStripMenuItem.Name = "webPageToolStripMenuItem";
-            this.webPageToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
-            this.webPageToolStripMenuItem.Text = "Web Page";
+            this.EXITbutton.Location = new System.Drawing.Point(114, 16);
+            this.EXITbutton.Name = "EXITbutton";
+            this.EXITbutton.Size = new System.Drawing.Size(75, 27);
+            this.EXITbutton.TabIndex = 10;
+            this.EXITbutton.Text = "E&xit";
+            this.EXITbutton.UseVisualStyleBackColor = true;
+            this.EXITbutton.Click += new System.EventHandler(this.EXITbutton_Click);
             // 
-            // label1
+            // monthsComboBox
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Employee ID:";
-            // 
-            // IDtextBox1
-            // 
-            this.IDtextBox1.Location = new System.Drawing.Point(89, 28);
-            this.IDtextBox1.Name = "IDtextBox1";
-            this.IDtextBox1.Size = new System.Drawing.Size(100, 20);
-            this.IDtextBox1.TabIndex = 2;
-            // 
-            // DepartmentgroupBox
-            // 
-            this.DepartmentgroupBox.Controls.Add(this.ProductionradioButton);
-            this.DepartmentgroupBox.Controls.Add(this.SalesradioButton);
-            this.DepartmentgroupBox.Controls.Add(this.RDradioButton);
-            this.DepartmentgroupBox.Controls.Add(this.AccountingradioButton);
-            this.DepartmentgroupBox.Controls.Add(this.HumanradioButton);
-            this.DepartmentgroupBox.Location = new System.Drawing.Point(16, 75);
-            this.DepartmentgroupBox.Name = "DepartmentgroupBox";
-            this.DepartmentgroupBox.Size = new System.Drawing.Size(173, 138);
-            this.DepartmentgroupBox.TabIndex = 3;
-            this.DepartmentgroupBox.TabStop = false;
-            this.DepartmentgroupBox.Text = "Department";
-            // 
-            // ProductionradioButton
-            // 
-            this.ProductionradioButton.AutoSize = true;
-            this.ProductionradioButton.Location = new System.Drawing.Point(7, 112);
-            this.ProductionradioButton.Name = "ProductionradioButton";
-            this.ProductionradioButton.Size = new System.Drawing.Size(76, 17);
-            this.ProductionradioButton.TabIndex = 4;
-            this.ProductionradioButton.TabStop = true;
-            this.ProductionradioButton.Text = "Production";
-            this.ProductionradioButton.UseVisualStyleBackColor = true;
-            // 
-            // SalesradioButton
-            // 
-            this.SalesradioButton.AutoSize = true;
-            this.SalesradioButton.Location = new System.Drawing.Point(7, 89);
-            this.SalesradioButton.Name = "SalesradioButton";
-            this.SalesradioButton.Size = new System.Drawing.Size(51, 17);
-            this.SalesradioButton.TabIndex = 3;
-            this.SalesradioButton.TabStop = true;
-            this.SalesradioButton.Text = "Sales";
-            this.SalesradioButton.UseVisualStyleBackColor = true;
-            // 
-            // RDradioButton
-            // 
-            this.RDradioButton.AutoSize = true;
-            this.RDradioButton.Location = new System.Drawing.Point(7, 66);
-            this.RDradioButton.Name = "RDradioButton";
-            this.RDradioButton.Size = new System.Drawing.Size(159, 17);
-            this.RDradioButton.TabIndex = 2;
-            this.RDradioButton.TabStop = true;
-            this.RDradioButton.Text = "Research And Development";
-            this.RDradioButton.UseVisualStyleBackColor = true;
-            // 
-            // AccountingradioButton
-            // 
-            this.AccountingradioButton.AutoSize = true;
-            this.AccountingradioButton.Location = new System.Drawing.Point(7, 43);
-            this.AccountingradioButton.Name = "AccountingradioButton";
-            this.AccountingradioButton.Size = new System.Drawing.Size(79, 17);
-            this.AccountingradioButton.TabIndex = 1;
-            this.AccountingradioButton.TabStop = true;
-            this.AccountingradioButton.Text = "Accounting";
-            this.AccountingradioButton.UseVisualStyleBackColor = true;
-            // 
-            // HumanradioButton
-            // 
-            this.HumanradioButton.AutoSize = true;
-            this.HumanradioButton.Location = new System.Drawing.Point(7, 20);
-            this.HumanradioButton.Name = "HumanradioButton";
-            this.HumanradioButton.Size = new System.Drawing.Size(113, 17);
-            this.HumanradioButton.TabIndex = 0;
-            this.HumanradioButton.TabStop = true;
-            this.HumanradioButton.Text = "Human Resources";
-            this.HumanradioButton.UseVisualStyleBackColor = true;
-            // 
-            // PositioncomboBox
-            // 
-            this.PositioncomboBox.FormattingEnabled = true;
-            this.PositioncomboBox.Items.AddRange(new object[] {
-            "Managers",
-            "Engineers",
-            "Technicians",
-            "Clerical Workers",
-            "Production Workers"});
-            this.PositioncomboBox.Location = new System.Drawing.Point(248, 28);
-            this.PositioncomboBox.Name = "PositioncomboBox";
-            this.PositioncomboBox.Size = new System.Drawing.Size(121, 21);
-            this.PositioncomboBox.TabIndex = 4;
+            this.monthsComboBox.FormattingEnabled = true;
+            this.monthsComboBox.Location = new System.Drawing.Point(49, 47);
+            this.monthsComboBox.Name = "monthsComboBox";
+            this.monthsComboBox.Size = new System.Drawing.Size(130, 21);
+            this.monthsComboBox.TabIndex = 11;
+            this.monthsComboBox.SelectedIndexChanged += new System.EventHandler(this.monthsComboBox_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(195, 31);
+            this.label2.Location = new System.Drawing.Point(46, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Position:";
+            this.label2.Size = new System.Drawing.Size(125, 13);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Select Month to process:";
             // 
-            // CalculateButton
+            // processingTextBox
             // 
-            this.CalculateButton.Location = new System.Drawing.Point(16, 319);
-            this.CalculateButton.Name = "CalculateButton";
-            this.CalculateButton.Size = new System.Drawing.Size(75, 54);
-            this.CalculateButton.TabIndex = 6;
-            this.CalculateButton.Text = "Calculate";
-            this.CalculateButton.UseVisualStyleBackColor = true;
+            this.processingTextBox.Location = new System.Drawing.Point(49, 100);
+            this.processingTextBox.Name = "processingTextBox";
+            this.processingTextBox.ReadOnly = true;
+            this.processingTextBox.Size = new System.Drawing.Size(129, 20);
+            this.processingTextBox.TabIndex = 14;
             // 
-            // DepartmentReportButton
+            // label3
             // 
-            this.DepartmentReportButton.Location = new System.Drawing.Point(138, 346);
-            this.DepartmentReportButton.Name = "DepartmentReportButton";
-            this.DepartmentReportButton.Size = new System.Drawing.Size(113, 27);
-            this.DepartmentReportButton.TabIndex = 7;
-            this.DepartmentReportButton.Text = "Department Report";
-            this.DepartmentReportButton.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(46, 77);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(79, 13);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "File to Process:";
             // 
-            // Clearbutton
+            // processButton
             // 
-            this.Clearbutton.Location = new System.Drawing.Point(294, 319);
-            this.Clearbutton.Name = "Clearbutton";
-            this.Clearbutton.Size = new System.Drawing.Size(75, 27);
-            this.Clearbutton.TabIndex = 9;
-            this.Clearbutton.Text = "Clear";
-            this.Clearbutton.UseVisualStyleBackColor = true;
-            // 
-            // EXITbutton
-            // 
-            this.EXITbutton.Location = new System.Drawing.Point(294, 346);
-            this.EXITbutton.Name = "EXITbutton";
-            this.EXITbutton.Size = new System.Drawing.Size(75, 27);
-            this.EXITbutton.TabIndex = 10;
-            this.EXITbutton.Text = "EXIT";
-            this.EXITbutton.UseVisualStyleBackColor = true;
+            this.processButton.Location = new System.Drawing.Point(33, 16);
+            this.processButton.Name = "processButton";
+            this.processButton.Size = new System.Drawing.Size(75, 27);
+            this.processButton.TabIndex = 10;
+            this.processButton.Text = "&Process";
+            this.processButton.UseVisualStyleBackColor = true;
+            this.processButton.Click += new System.EventHandler(this.processButton_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.FSAtextBox);
-            this.groupBox1.Controls.Add(this.FSAcheckBox);
-            this.groupBox1.Controls.Add(this.PlancheckBox);
-            this.groupBox1.Controls.Add(this.PlantextBox);
-            this.groupBox1.Controls.Add(this.LItextBox);
-            this.groupBox1.Controls.Add(this.MedicaltextBox);
-            this.groupBox1.Controls.Add(this.LIcheckBox);
-            this.groupBox1.Controls.Add(this.MedicalcheckBox);
-            this.groupBox1.Location = new System.Drawing.Point(198, 81);
+            this.groupBox1.Controls.Add(this.fourkTextBox);
+            this.groupBox1.Controls.Add(this.four01kCheckBox);
+            this.groupBox1.Controls.Add(this.label16);
+            this.groupBox1.Controls.Add(this.positionLabel);
+            this.groupBox1.Controls.Add(this.NameLabel);
+            this.groupBox1.Controls.Add(this.fsaLabel);
+            this.groupBox1.Controls.Add(this.dentalLabel);
+            this.groupBox1.Controls.Add(this.lifeinsuLabel);
+            this.groupBox1.Controls.Add(this.medLabel);
+            this.groupBox1.Controls.Add(this.rateLabel);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.departmentLabel);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.label14);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.salaryRateLabel);
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Location = new System.Drawing.Point(15, 124);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(182, 232);
-            this.groupBox1.TabIndex = 12;
+            this.groupBox1.Size = new System.Drawing.Size(236, 318);
+            this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Voluntary deductions ";
+            this.groupBox1.Text = "Employee Information";
             // 
-            // FSAtextBox
+            // fourkTextBox
             // 
-            this.FSAtextBox.Location = new System.Drawing.Point(7, 198);
-            this.FSAtextBox.Name = "FSAtextBox";
-            this.FSAtextBox.Size = new System.Drawing.Size(100, 20);
-            this.FSAtextBox.TabIndex = 7;
-            this.FSAtextBox.Visible = false;
+            this.fourkTextBox.Enabled = false;
+            this.fourkTextBox.Location = new System.Drawing.Point(66, 262);
+            this.fourkTextBox.Name = "fourkTextBox";
+            this.fourkTextBox.Size = new System.Drawing.Size(100, 20);
+            this.fourkTextBox.TabIndex = 2;
+            this.fourkTextBox.Text = "401K";
             // 
-            // FSAcheckBox
+            // four01kCheckBox
             // 
-            this.FSAcheckBox.AutoSize = true;
-            this.FSAcheckBox.Location = new System.Drawing.Point(7, 174);
-            this.FSAcheckBox.Name = "FSAcheckBox";
-            this.FSAcheckBox.Size = new System.Drawing.Size(46, 17);
-            this.FSAcheckBox.TabIndex = 6;
-            this.FSAcheckBox.Text = "FSA";
-            this.FSAcheckBox.UseVisualStyleBackColor = true;
-            this.FSAcheckBox.CheckedChanged += new System.EventHandler(this.FSAcheckBox_CheckedChanged);
+            this.four01kCheckBox.AutoSize = true;
+            this.four01kCheckBox.Location = new System.Drawing.Point(6, 264);
+            this.four01kCheckBox.Name = "four01kCheckBox";
+            this.four01kCheckBox.Size = new System.Drawing.Size(54, 17);
+            this.four01kCheckBox.TabIndex = 1;
+            this.four01kCheckBox.Text = "401K:";
+            this.four01kCheckBox.UseVisualStyleBackColor = true;
+            this.four01kCheckBox.CheckedChanged += new System.EventHandler(this.four01kCheckBox_CheckedChanged);
             // 
-            // PlancheckBox
+            // label16
             // 
-            this.PlancheckBox.AutoSize = true;
-            this.PlancheckBox.Location = new System.Drawing.Point(7, 124);
-            this.PlancheckBox.Name = "PlancheckBox";
-            this.PlancheckBox.Size = new System.Drawing.Size(79, 17);
-            this.PlancheckBox.TabIndex = 5;
-            this.PlancheckBox.Text = "401K PLan";
-            this.PlancheckBox.UseVisualStyleBackColor = true;
-            this.PlancheckBox.CheckedChanged += new System.EventHandler(this.PlancheckBox_CheckedChanged);
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(84, 144);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(24, 13);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "pos";
             // 
-            // PlantextBox
+            // positionLabel
             // 
-            this.PlantextBox.Location = new System.Drawing.Point(6, 147);
-            this.PlantextBox.Name = "PlantextBox";
-            this.PlantextBox.Size = new System.Drawing.Size(100, 20);
-            this.PlantextBox.TabIndex = 4;
-            this.PlantextBox.Visible = false;
+            this.positionLabel.AutoSize = true;
+            this.positionLabel.Location = new System.Drawing.Point(85, 91);
+            this.positionLabel.Name = "positionLabel";
+            this.positionLabel.Size = new System.Drawing.Size(24, 13);
+            this.positionLabel.TabIndex = 0;
+            this.positionLabel.Text = "pos";
             // 
-            // LItextBox
+            // NameLabel
             // 
-            this.LItextBox.Location = new System.Drawing.Point(7, 97);
-            this.LItextBox.Name = "LItextBox";
-            this.LItextBox.Size = new System.Drawing.Size(100, 20);
-            this.LItextBox.TabIndex = 3;
-            this.LItextBox.Visible = false;
+            this.NameLabel.AutoSize = true;
+            this.NameLabel.Location = new System.Drawing.Point(85, 36);
+            this.NameLabel.Name = "NameLabel";
+            this.NameLabel.Size = new System.Drawing.Size(106, 13);
+            this.NameLabel.TabIndex = 0;
+            this.NameLabel.Text = "Last Name,first name";
             // 
-            // MedicaltextBox
+            // fsaLabel
             // 
-            this.MedicaltextBox.Location = new System.Drawing.Point(7, 44);
-            this.MedicaltextBox.Name = "MedicaltextBox";
-            this.MedicaltextBox.Size = new System.Drawing.Size(100, 20);
-            this.MedicaltextBox.TabIndex = 2;
-            this.MedicaltextBox.Visible = false;
+            this.fsaLabel.AutoSize = true;
+            this.fsaLabel.Location = new System.Drawing.Point(85, 294);
+            this.fsaLabel.Name = "fsaLabel";
+            this.fsaLabel.Size = new System.Drawing.Size(21, 13);
+            this.fsaLabel.TabIndex = 0;
+            this.fsaLabel.Text = "fsa";
             // 
-            // LIcheckBox
+            // dentalLabel
             // 
-            this.LIcheckBox.AutoSize = true;
-            this.LIcheckBox.Location = new System.Drawing.Point(7, 73);
-            this.LIcheckBox.Name = "LIcheckBox";
-            this.LIcheckBox.Size = new System.Drawing.Size(93, 17);
-            this.LIcheckBox.TabIndex = 1;
-            this.LIcheckBox.Text = "Life Insurance";
-            this.LIcheckBox.UseVisualStyleBackColor = true;
-            this.LIcheckBox.CheckedChanged += new System.EventHandler(this.LIcheckBox_CheckedChanged);
+            this.dentalLabel.AutoSize = true;
+            this.dentalLabel.Location = new System.Drawing.Point(85, 205);
+            this.dentalLabel.Name = "dentalLabel";
+            this.dentalLabel.Size = new System.Drawing.Size(25, 13);
+            this.dentalLabel.TabIndex = 0;
+            this.dentalLabel.Text = "den";
             // 
-            // MedicalcheckBox
+            // lifeinsuLabel
             // 
-            this.MedicalcheckBox.AutoSize = true;
-            this.MedicalcheckBox.Location = new System.Drawing.Point(7, 20);
-            this.MedicalcheckBox.Name = "MedicalcheckBox";
-            this.MedicalcheckBox.Size = new System.Drawing.Size(63, 17);
-            this.MedicalcheckBox.TabIndex = 0;
-            this.MedicalcheckBox.Text = "Medical";
-            this.MedicalcheckBox.UseVisualStyleBackColor = true;
-            this.MedicalcheckBox.CheckedChanged += new System.EventHandler(this.MedicalcheckBox_CheckedChanged);
+            this.lifeinsuLabel.AutoSize = true;
+            this.lifeinsuLabel.Location = new System.Drawing.Point(83, 233);
+            this.lifeinsuLabel.Name = "lifeinsuLabel";
+            this.lifeinsuLabel.Size = new System.Drawing.Size(39, 13);
+            this.lifeinsuLabel.TabIndex = 0;
+            this.lifeinsuLabel.Text = "lifeinsu";
+            // 
+            // medLabel
+            // 
+            this.medLabel.AutoSize = true;
+            this.medLabel.Location = new System.Drawing.Point(84, 176);
+            this.medLabel.Name = "medLabel";
+            this.medLabel.Size = new System.Drawing.Size(27, 13);
+            this.medLabel.TabIndex = 0;
+            this.medLabel.Text = "med";
+            // 
+            // rateLabel
+            // 
+            this.rateLabel.AutoSize = true;
+            this.rateLabel.Location = new System.Drawing.Point(85, 118);
+            this.rateLabel.Name = "rateLabel";
+            this.rateLabel.Size = new System.Drawing.Size(25, 13);
+            this.rateLabel.TabIndex = 0;
+            this.rateLabel.Text = "rate";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(7, 294);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(30, 13);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "FSA:";
+            // 
+            // departmentLabel
+            // 
+            this.departmentLabel.AutoSize = true;
+            this.departmentLabel.Location = new System.Drawing.Point(85, 63);
+            this.departmentLabel.Name = "departmentLabel";
+            this.departmentLabel.Size = new System.Drawing.Size(25, 13);
+            this.departmentLabel.TabIndex = 0;
+            this.departmentLabel.Text = "dep";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(5, 205);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(41, 13);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Dental:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(5, 233);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(77, 13);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Life Insurance:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(5, 176);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(47, 13);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "Medical:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(5, 144);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(75, 13);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Annual Salary:";
+            // 
+            // salaryRateLabel
+            // 
+            this.salaryRateLabel.AutoSize = true;
+            this.salaryRateLabel.Location = new System.Drawing.Point(5, 118);
+            this.salaryRateLabel.Name = "salaryRateLabel";
+            this.salaryRateLabel.Size = new System.Drawing.Size(66, 13);
+            this.salaryRateLabel.TabIndex = 0;
+            this.salaryRateLabel.Text = "Hourly Rate:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(7, 91);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(47, 13);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Position:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 63);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(65, 13);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Department:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(7, 36);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(38, 13);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Name:";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.radioButton3);
-            this.groupBox2.Controls.Add(this.radioButton2);
-            this.groupBox2.Controls.Add(this.radioButton1);
-            this.groupBox2.Location = new System.Drawing.Point(16, 220);
+            this.groupBox2.Controls.Add(this.processingTextBox);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.monthsComboBox);
+            this.groupBox2.Location = new System.Drawing.Point(257, 87);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(166, 93);
-            this.groupBox2.TabIndex = 13;
+            this.groupBox2.Size = new System.Drawing.Size(216, 141);
+            this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Mangement";
+            this.groupBox2.Text = "Month Selection";
             // 
-            // radioButton3
+            // groupBox3
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(7, 70);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(95, 17);
-            this.radioButton3.TabIndex = 3;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "New employee";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.groupBox3.Controls.Add(this.processButton);
+            this.groupBox3.Controls.Add(this.EXITbutton);
+            this.groupBox3.Location = new System.Drawing.Point(258, 447);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(215, 53);
+            this.groupBox3.TabIndex = 17;
+            this.groupBox3.TabStop = false;
             // 
-            // radioButton2
+            // employeeBox
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(7, 20);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(52, 17);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Raise";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.employeeBox.FormattingEnabled = true;
+            this.employeeBox.Location = new System.Drawing.Point(97, 97);
+            this.employeeBox.Name = "employeeBox";
+            this.employeeBox.Size = new System.Drawing.Size(154, 21);
+            this.employeeBox.TabIndex = 0;
             // 
-            // radioButton1
+            // label4
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(7, 43);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(42, 17);
-            this.radioButton1.TabIndex = 1;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Fire";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 100);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(79, 13);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "View Employee";
             // 
-            // EmployeeReportbutton
+            // update401kButton
             // 
-            this.EmployeeReportbutton.Location = new System.Drawing.Point(138, 319);
-            this.EmployeeReportbutton.Name = "EmployeeReportbutton";
-            this.EmployeeReportbutton.Size = new System.Drawing.Size(113, 27);
-            this.EmployeeReportbutton.TabIndex = 14;
-            this.EmployeeReportbutton.Text = "Employee Report";
-            this.EmployeeReportbutton.UseVisualStyleBackColor = true;
+            this.update401kButton.Location = new System.Drawing.Point(63, 16);
+            this.update401kButton.Name = "update401kButton";
+            this.update401kButton.Size = new System.Drawing.Size(96, 27);
+            this.update401kButton.TabIndex = 10;
+            this.update401kButton.Text = "&Update 401K";
+            this.update401kButton.UseVisualStyleBackColor = true;
+            this.update401kButton.Click += new System.EventHandler(this.processButton_Click);
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.update401kButton);
+            this.groupBox4.Location = new System.Drawing.Point(17, 447);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(233, 53);
+            this.groupBox4.TabIndex = 18;
+            this.groupBox4.TabStop = false;
+            // 
+            // reportComboBox
+            // 
+            this.reportComboBox.FormattingEnabled = true;
+            this.reportComboBox.Location = new System.Drawing.Point(42, 48);
+            this.reportComboBox.Name = "reportComboBox";
+            this.reportComboBox.Size = new System.Drawing.Size(130, 21);
+            this.reportComboBox.TabIndex = 11;
+            this.reportComboBox.SelectedIndexChanged += new System.EventHandler(this.monthsComboBox_SelectedIndexChanged);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(40, 22);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(102, 13);
+            this.label12.TabIndex = 13;
+            this.label12.Text = "Select Report Type:";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.reportButton);
+            this.groupBox5.Controls.Add(this.label12);
+            this.groupBox5.Controls.Add(this.reportComboBox);
+            this.groupBox5.Location = new System.Drawing.Point(257, 237);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(216, 133);
+            this.groupBox5.TabIndex = 19;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Reports";
+            // 
+            // reportButton
+            // 
+            this.reportButton.Location = new System.Drawing.Point(57, 88);
+            this.reportButton.Name = "reportButton";
+            this.reportButton.Size = new System.Drawing.Size(96, 27);
+            this.reportButton.TabIndex = 10;
+            this.reportButton.Text = "&Create Report";
+            this.reportButton.UseVisualStyleBackColor = true;
+            this.reportButton.Click += new System.EventHandler(this.processButton_Click);
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.checksButton);
+            this.groupBox6.Location = new System.Drawing.Point(257, 377);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(215, 64);
+            this.groupBox6.TabIndex = 20;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Employee Checks";
+            // 
+            // checksButton
+            // 
+            this.checksButton.Location = new System.Drawing.Point(57, 24);
+            this.checksButton.Name = "checksButton";
+            this.checksButton.Size = new System.Drawing.Size(96, 27);
+            this.checksButton.TabIndex = 10;
+            this.checksButton.Text = "&Create Checks";
+            this.checksButton.UseVisualStyleBackColor = true;
+            this.checksButton.Click += new System.EventHandler(this.processButton_Click);
             // 
             // Payroll_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(412, 393);
-            this.Controls.Add(this.EmployeeReportbutton);
+            this.ClientSize = new System.Drawing.Size(484, 527);
+            this.Controls.Add(this.groupBox6);
+            this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.employeeBox);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.EXITbutton);
-            this.Controls.Add(this.Clearbutton);
-            this.Controls.Add(this.DepartmentReportButton);
-            this.Controls.Add(this.CalculateButton);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.PositioncomboBox);
-            this.Controls.Add(this.DepartmentgroupBox);
-            this.Controls.Add(this.IDtextBox1);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Payroll_Form";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Payroll Form";
+            this.Load += new System.EventHandler(this.Payroll_Form_Load);
+            this.Controls.SetChildIndex(this.menuStrip1, 0);
+            this.Controls.SetChildIndex(this.groupBox1, 0);
+            this.Controls.SetChildIndex(this.groupBox2, 0);
+            this.Controls.SetChildIndex(this.employeeBox, 0);
+            this.Controls.SetChildIndex(this.groupBox3, 0);
+            this.Controls.SetChildIndex(this.label4, 0);
+            this.Controls.SetChildIndex(this.groupBox4, 0);
+            this.Controls.SetChildIndex(this.groupBox5, 0);
+            this.Controls.SetChildIndex(this.groupBox6, 0);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.DepartmentgroupBox.ResumeLayout(false);
-            this.DepartmentgroupBox.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -545,47 +629,54 @@
         private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eXITToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem frontToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem colorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox IDtextBox1;
-        private System.Windows.Forms.GroupBox DepartmentgroupBox;
-        private System.Windows.Forms.RadioButton ProductionradioButton;
-        private System.Windows.Forms.RadioButton SalesradioButton;
-        private System.Windows.Forms.RadioButton RDradioButton;
-        private System.Windows.Forms.RadioButton AccountingradioButton;
-        private System.Windows.Forms.RadioButton HumanradioButton;
-        private System.Windows.Forms.ComboBox PositioncomboBox;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button CalculateButton;
-        private System.Windows.Forms.Button DepartmentReportButton;
-        private System.Windows.Forms.Button Clearbutton;
         private System.Windows.Forms.Button EXITbutton;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox FSAtextBox;
-        private System.Windows.Forms.CheckBox FSAcheckBox;
-        private System.Windows.Forms.CheckBox PlancheckBox;
-        private System.Windows.Forms.TextBox PlantextBox;
-        private System.Windows.Forms.TextBox LItextBox;
-        private System.Windows.Forms.TextBox MedicaltextBox;
-        private System.Windows.Forms.CheckBox LIcheckBox;
-        private System.Windows.Forms.CheckBox MedicalcheckBox;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Button EmployeeReportbutton;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem summaryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem calculateToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem webPageToolStripMenuItem;
+        private System.Windows.Forms.ComboBox monthsComboBox;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox processingTextBox;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button processButton;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label NameLabel;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.ComboBox employeeBox;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label departmentLabel;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label positionLabel;
+        private System.Windows.Forms.Label rateLabel;
+        private System.Windows.Forms.Label salaryRateLabel;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label medLabel;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label dentalLabel;
+        private System.Windows.Forms.Label lifeinsuLabel;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox fourkTextBox;
+        private System.Windows.Forms.CheckBox four01kCheckBox;
+        private System.Windows.Forms.Label fsaLabel;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button update401kButton;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.ComboBox reportComboBox;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.ToolStripMenuItem createChecksToolStripMenuItem;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Button reportButton;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Button checksButton;
     }
 }
 

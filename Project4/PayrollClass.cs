@@ -63,5 +63,11 @@ namespace Project4
             return netPayDecimal;
         }
 
+        //Stop contribution of 401k to  15,000
+        public decimal stop401k(decimal contribution401k)
+        {
+            return contribution401k;
+        }
+
     }
 }
