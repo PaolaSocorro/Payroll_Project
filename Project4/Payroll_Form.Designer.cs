@@ -60,9 +60,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.processButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.decTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.project4dataDataSet = new Project4.project4dataDataSet();
             this.employee_NameComboBox = new System.Windows.Forms.ComboBox();
             this.master_TransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.project4dataDataSet = new Project4.project4dataDataSet();
             this.employeeIDTextBox = new System.Windows.Forms.TextBox();
             this.departmentTextBox = new System.Windows.Forms.TextBox();
             this.positionTextBox = new System.Windows.Forms.TextBox();
@@ -71,6 +72,7 @@
             this.life_InsuranceTextBox = new System.Windows.Forms.TextBox();
             this._401KTextBox = new System.Windows.Forms.TextBox();
             this.fSATextBox = new System.Windows.Forms.TextBox();
+            this.project4dataDataSet1 = new Project4.project4dataDataSet();
             this.masterTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.project4dataDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.masterTransactionsBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
@@ -91,30 +93,27 @@
             this.masterTransactionsBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.jan_TransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.jan_TransactionsTableAdapter = new Project4.project4dataDataSetTableAdapters.Jan_TransactionsTableAdapter();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.project4dataDataSet1 = new Project4.project4dataDataSet();
-            this.febTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.feb_TransactionsTableAdapter = new Project4.project4dataDataSetTableAdapters.Feb_TransactionsTableAdapter();
-            this.marTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.mar_TransactionsTableAdapter = new Project4.project4dataDataSetTableAdapters.Mar_TransactionsTableAdapter();
-            this.aprTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.apr_TransactionsTableAdapter = new Project4.project4dataDataSetTableAdapters.Apr_TransactionsTableAdapter();
-            this.mayTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.may_TransactionsTableAdapter = new Project4.project4dataDataSetTableAdapters.May_TransactionsTableAdapter();
-            this.junTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.jun_TransactionsTableAdapter = new Project4.project4dataDataSetTableAdapters.Jun_TransactionsTableAdapter();
-            this.julTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.jul_TransactionsTableAdapter = new Project4.project4dataDataSetTableAdapters.Jul_TransactionsTableAdapter();
-            this.augTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.aug_TransactionsTableAdapter = new Project4.project4dataDataSetTableAdapters.Aug_TransactionsTableAdapter();
-            this.sepTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.sep_TransactionsTableAdapter = new Project4.project4dataDataSetTableAdapters.Sep_TransactionsTableAdapter();
-            this.octTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.oct_TransactionsTableAdapter = new Project4.project4dataDataSetTableAdapters.Oct_TransactionsTableAdapter();
-            this.novTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.nov_TransactionsTableAdapter = new Project4.project4dataDataSetTableAdapters.Nov_TransactionsTableAdapter();
-            this.decTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dec_TransactionsTableAdapter = new Project4.project4dataDataSetTableAdapters.Dec_TransactionsTableAdapter();
+            this.nov_TransactionsTableAdapter = new Project4.project4dataDataSetTableAdapters.Nov_TransactionsTableAdapter();
+            this.novTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.oct_TransactionsTableAdapter = new Project4.project4dataDataSetTableAdapters.Oct_TransactionsTableAdapter();
+            this.octTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sep_TransactionsTableAdapter = new Project4.project4dataDataSetTableAdapters.Sep_TransactionsTableAdapter();
+            this.sepTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.aug_TransactionsTableAdapter = new Project4.project4dataDataSetTableAdapters.Aug_TransactionsTableAdapter();
+            this.augTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.jul_TransactionsTableAdapter = new Project4.project4dataDataSetTableAdapters.Jul_TransactionsTableAdapter();
+            this.julTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.jun_TransactionsTableAdapter = new Project4.project4dataDataSetTableAdapters.Jun_TransactionsTableAdapter();
+            this.junTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.may_TransactionsTableAdapter = new Project4.project4dataDataSetTableAdapters.May_TransactionsTableAdapter();
+            this.mayTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.apr_TransactionsTableAdapter = new Project4.project4dataDataSetTableAdapters.Apr_TransactionsTableAdapter();
+            this.aprTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mar_TransactionsTableAdapter = new Project4.project4dataDataSetTableAdapters.Mar_TransactionsTableAdapter();
+            this.marTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.feb_TransactionsTableAdapter = new Project4.project4dataDataSetTableAdapters.Feb_TransactionsTableAdapter();
+            this.febTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             employeeIDLabel = new System.Windows.Forms.Label();
             departmentLabel = new System.Windows.Forms.Label();
             employee_NameLabel1 = new System.Windows.Forms.Label();
@@ -126,8 +125,10 @@
             fSALabel = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.master_TransactionsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.decTransactionsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.project4dataDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.master_TransactionsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.project4dataDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.masterTransactionsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.project4dataDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.masterTransactionsBindingSource4)).BeginInit();
@@ -140,18 +141,16 @@
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.masterTransactionsBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jan_TransactionsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.project4dataDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.febTransactionsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.marTransactionsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aprTransactionsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mayTransactionsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.junTransactionsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.julTransactionsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.augTransactionsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sepTransactionsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.octTransactionsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.novTransactionsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.decTransactionsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.octTransactionsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sepTransactionsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.augTransactionsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.julTransactionsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.junTransactionsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mayTransactionsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aprTransactionsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.marTransactionsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.febTransactionsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // employeeIDLabel
@@ -337,14 +336,14 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // testFormToolStripMenuItem
             // 
             this.testFormToolStripMenuItem.Name = "testFormToolStripMenuItem";
-            this.testFormToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.testFormToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.testFormToolStripMenuItem.Text = "Test Form";
             this.testFormToolStripMenuItem.Click += new System.EventHandler(this.testFormToolStripMenuItem_Click);
             // 
@@ -405,7 +404,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(employeeIDLabel);
             this.groupBox1.Controls.Add(this.employee_NameComboBox);
             this.groupBox1.Controls.Add(this.employeeIDTextBox);
@@ -431,6 +429,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Employee Information";
             // 
+            // decTransactionsBindingSource
+            // 
+            this.decTransactionsBindingSource.DataMember = "Dec_Transactions";
+            this.decTransactionsBindingSource.DataSource = this.project4dataDataSet;
+            // 
+            // project4dataDataSet
+            // 
+            this.project4dataDataSet.DataSetName = "project4dataDataSet";
+            this.project4dataDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // employee_NameComboBox
             // 
             this.employee_NameComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.master_TransactionsBindingSource, "Employee Name", true, System.Windows.Forms.DataSourceUpdateMode.Never));
@@ -447,16 +455,12 @@
             this.master_TransactionsBindingSource.DataMember = "Master_Transactions";
             this.master_TransactionsBindingSource.DataSource = this.project4dataDataSet;
             // 
-            // project4dataDataSet
-            // 
-            this.project4dataDataSet.DataSetName = "project4dataDataSet";
-            this.project4dataDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // employeeIDTextBox
             // 
             this.employeeIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.master_TransactionsBindingSource, "EmployeeID", true));
             this.employeeIDTextBox.Location = new System.Drawing.Point(103, 59);
             this.employeeIDTextBox.Name = "employeeIDTextBox";
+            this.employeeIDTextBox.ReadOnly = true;
             this.employeeIDTextBox.Size = new System.Drawing.Size(151, 20);
             this.employeeIDTextBox.TabIndex = 23;
             // 
@@ -465,6 +469,7 @@
             this.departmentTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.master_TransactionsBindingSource, "Department", true));
             this.departmentTextBox.Location = new System.Drawing.Point(103, 85);
             this.departmentTextBox.Name = "departmentTextBox";
+            this.departmentTextBox.ReadOnly = true;
             this.departmentTextBox.Size = new System.Drawing.Size(151, 20);
             this.departmentTextBox.TabIndex = 25;
             // 
@@ -473,6 +478,7 @@
             this.positionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.master_TransactionsBindingSource, "Position", true));
             this.positionTextBox.Location = new System.Drawing.Point(103, 111);
             this.positionTextBox.Name = "positionTextBox";
+            this.positionTextBox.ReadOnly = true;
             this.positionTextBox.Size = new System.Drawing.Size(151, 20);
             this.positionTextBox.TabIndex = 27;
             // 
@@ -481,6 +487,7 @@
             this.salary_RateTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.master_TransactionsBindingSource, "Salary Rate", true));
             this.salary_RateTextBox.Location = new System.Drawing.Point(103, 137);
             this.salary_RateTextBox.Name = "salary_RateTextBox";
+            this.salary_RateTextBox.ReadOnly = true;
             this.salary_RateTextBox.Size = new System.Drawing.Size(151, 20);
             this.salary_RateTextBox.TabIndex = 29;
             // 
@@ -489,6 +496,7 @@
             this.medicalTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.master_TransactionsBindingSource, "Medical", true));
             this.medicalTextBox.Location = new System.Drawing.Point(103, 163);
             this.medicalTextBox.Name = "medicalTextBox";
+            this.medicalTextBox.ReadOnly = true;
             this.medicalTextBox.Size = new System.Drawing.Size(151, 20);
             this.medicalTextBox.TabIndex = 31;
             // 
@@ -497,6 +505,7 @@
             this.life_InsuranceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.master_TransactionsBindingSource, "Life Insurance", true));
             this.life_InsuranceTextBox.Location = new System.Drawing.Point(103, 189);
             this.life_InsuranceTextBox.Name = "life_InsuranceTextBox";
+            this.life_InsuranceTextBox.ReadOnly = true;
             this.life_InsuranceTextBox.Size = new System.Drawing.Size(151, 20);
             this.life_InsuranceTextBox.TabIndex = 33;
             // 
@@ -505,6 +514,7 @@
             this._401KTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.master_TransactionsBindingSource, "401K", true));
             this._401KTextBox.Location = new System.Drawing.Point(103, 215);
             this._401KTextBox.Name = "_401KTextBox";
+            this._401KTextBox.ReadOnly = true;
             this._401KTextBox.Size = new System.Drawing.Size(151, 20);
             this._401KTextBox.TabIndex = 35;
             // 
@@ -513,8 +523,14 @@
             this.fSATextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.master_TransactionsBindingSource, "FSA", true));
             this.fSATextBox.Location = new System.Drawing.Point(103, 241);
             this.fSATextBox.Name = "fSATextBox";
+            this.fSATextBox.ReadOnly = true;
             this.fSATextBox.Size = new System.Drawing.Size(151, 20);
             this.fSATextBox.TabIndex = 37;
+            // 
+            // project4dataDataSet1
+            // 
+            this.project4dataDataSet1.DataSetName = "project4dataDataSet";
+            this.project4dataDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // masterTransactionsBindingSource
             // 
@@ -679,118 +695,99 @@
             // 
             this.jan_TransactionsTableAdapter.ClearBeforeFill = true;
             // 
-            // comboBox1
+            // dec_TransactionsTableAdapter
             // 
-            this.comboBox1.DataSource = this.decTransactionsBindingSource;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(64, 287);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 40;
-            // 
-            // project4dataDataSet1
-            // 
-            this.project4dataDataSet1.DataSetName = "project4dataDataSet";
-            this.project4dataDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // febTransactionsBindingSource
-            // 
-            this.febTransactionsBindingSource.DataMember = "Feb_Transactions";
-            this.febTransactionsBindingSource.DataSource = this.project4dataDataSet1;
-            // 
-            // feb_TransactionsTableAdapter
-            // 
-            this.feb_TransactionsTableAdapter.ClearBeforeFill = true;
-            // 
-            // marTransactionsBindingSource
-            // 
-            this.marTransactionsBindingSource.DataMember = "Mar_Transactions";
-            this.marTransactionsBindingSource.DataSource = this.project4dataDataSet1;
-            // 
-            // mar_TransactionsTableAdapter
-            // 
-            this.mar_TransactionsTableAdapter.ClearBeforeFill = true;
-            // 
-            // aprTransactionsBindingSource
-            // 
-            this.aprTransactionsBindingSource.DataMember = "Apr_Transactions";
-            this.aprTransactionsBindingSource.DataSource = this.project4dataDataSet1;
-            // 
-            // apr_TransactionsTableAdapter
-            // 
-            this.apr_TransactionsTableAdapter.ClearBeforeFill = true;
-            // 
-            // mayTransactionsBindingSource
-            // 
-            this.mayTransactionsBindingSource.DataMember = "May_Transactions";
-            this.mayTransactionsBindingSource.DataSource = this.project4dataDataSet1;
-            // 
-            // may_TransactionsTableAdapter
-            // 
-            this.may_TransactionsTableAdapter.ClearBeforeFill = true;
-            // 
-            // junTransactionsBindingSource
-            // 
-            this.junTransactionsBindingSource.DataMember = "Jun_Transactions";
-            this.junTransactionsBindingSource.DataSource = this.project4dataDataSet1;
-            // 
-            // jun_TransactionsTableAdapter
-            // 
-            this.jun_TransactionsTableAdapter.ClearBeforeFill = true;
-            // 
-            // julTransactionsBindingSource
-            // 
-            this.julTransactionsBindingSource.DataMember = "Jul_Transactions";
-            this.julTransactionsBindingSource.DataSource = this.project4dataDataSet1;
-            // 
-            // jul_TransactionsTableAdapter
-            // 
-            this.jul_TransactionsTableAdapter.ClearBeforeFill = true;
-            // 
-            // augTransactionsBindingSource
-            // 
-            this.augTransactionsBindingSource.DataMember = "Aug_Transactions";
-            this.augTransactionsBindingSource.DataSource = this.project4dataDataSet1;
-            // 
-            // aug_TransactionsTableAdapter
-            // 
-            this.aug_TransactionsTableAdapter.ClearBeforeFill = true;
-            // 
-            // sepTransactionsBindingSource
-            // 
-            this.sepTransactionsBindingSource.DataMember = "Sep_Transactions";
-            this.sepTransactionsBindingSource.DataSource = this.project4dataDataSet1;
-            // 
-            // sep_TransactionsTableAdapter
-            // 
-            this.sep_TransactionsTableAdapter.ClearBeforeFill = true;
-            // 
-            // octTransactionsBindingSource
-            // 
-            this.octTransactionsBindingSource.DataMember = "Oct_Transactions";
-            this.octTransactionsBindingSource.DataSource = this.project4dataDataSet1;
-            // 
-            // oct_TransactionsTableAdapter
-            // 
-            this.oct_TransactionsTableAdapter.ClearBeforeFill = true;
-            // 
-            // novTransactionsBindingSource
-            // 
-            this.novTransactionsBindingSource.DataMember = "Nov_Transactions";
-            this.novTransactionsBindingSource.DataSource = this.project4dataDataSet1;
+            this.dec_TransactionsTableAdapter.ClearBeforeFill = true;
             // 
             // nov_TransactionsTableAdapter
             // 
             this.nov_TransactionsTableAdapter.ClearBeforeFill = true;
             // 
-            // decTransactionsBindingSource
+            // novTransactionsBindingSource
             // 
-            this.decTransactionsBindingSource.DataMember = "Dec_Transactions";
-            this.decTransactionsBindingSource.DataSource = this.project4dataDataSet1;
+            this.novTransactionsBindingSource.DataMember = "Nov_Transactions";
+            this.novTransactionsBindingSource.DataSource = this.project4dataDataSet;
             // 
-            // dec_TransactionsTableAdapter
+            // oct_TransactionsTableAdapter
             // 
-            this.dec_TransactionsTableAdapter.ClearBeforeFill = true;
+            this.oct_TransactionsTableAdapter.ClearBeforeFill = true;
+            // 
+            // octTransactionsBindingSource
+            // 
+            this.octTransactionsBindingSource.DataMember = "Oct_Transactions";
+            this.octTransactionsBindingSource.DataSource = this.project4dataDataSet;
+            // 
+            // sep_TransactionsTableAdapter
+            // 
+            this.sep_TransactionsTableAdapter.ClearBeforeFill = true;
+            // 
+            // sepTransactionsBindingSource
+            // 
+            this.sepTransactionsBindingSource.DataMember = "Sep_Transactions";
+            this.sepTransactionsBindingSource.DataSource = this.project4dataDataSet;
+            // 
+            // aug_TransactionsTableAdapter
+            // 
+            this.aug_TransactionsTableAdapter.ClearBeforeFill = true;
+            // 
+            // augTransactionsBindingSource
+            // 
+            this.augTransactionsBindingSource.DataMember = "Aug_Transactions";
+            this.augTransactionsBindingSource.DataSource = this.project4dataDataSet;
+            // 
+            // jul_TransactionsTableAdapter
+            // 
+            this.jul_TransactionsTableAdapter.ClearBeforeFill = true;
+            // 
+            // julTransactionsBindingSource
+            // 
+            this.julTransactionsBindingSource.DataMember = "Jul_Transactions";
+            this.julTransactionsBindingSource.DataSource = this.project4dataDataSet;
+            // 
+            // jun_TransactionsTableAdapter
+            // 
+            this.jun_TransactionsTableAdapter.ClearBeforeFill = true;
+            // 
+            // junTransactionsBindingSource
+            // 
+            this.junTransactionsBindingSource.DataMember = "Jun_Transactions";
+            this.junTransactionsBindingSource.DataSource = this.project4dataDataSet;
+            // 
+            // may_TransactionsTableAdapter
+            // 
+            this.may_TransactionsTableAdapter.ClearBeforeFill = true;
+            // 
+            // mayTransactionsBindingSource
+            // 
+            this.mayTransactionsBindingSource.DataMember = "May_Transactions";
+            this.mayTransactionsBindingSource.DataSource = this.project4dataDataSet;
+            // 
+            // apr_TransactionsTableAdapter
+            // 
+            this.apr_TransactionsTableAdapter.ClearBeforeFill = true;
+            // 
+            // aprTransactionsBindingSource
+            // 
+            this.aprTransactionsBindingSource.DataMember = "Apr_Transactions";
+            this.aprTransactionsBindingSource.DataSource = this.project4dataDataSet;
+            // 
+            // mar_TransactionsTableAdapter
+            // 
+            this.mar_TransactionsTableAdapter.ClearBeforeFill = true;
+            // 
+            // marTransactionsBindingSource
+            // 
+            this.marTransactionsBindingSource.DataMember = "Mar_Transactions";
+            this.marTransactionsBindingSource.DataSource = this.project4dataDataSet;
+            // 
+            // feb_TransactionsTableAdapter
+            // 
+            this.feb_TransactionsTableAdapter.ClearBeforeFill = true;
+            // 
+            // febTransactionsBindingSource
+            // 
+            this.febTransactionsBindingSource.DataMember = "Feb_Transactions";
+            this.febTransactionsBindingSource.DataSource = this.project4dataDataSet;
             // 
             // Payroll_Form
             // 
@@ -819,8 +816,10 @@
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.master_TransactionsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.decTransactionsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.project4dataDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.master_TransactionsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.project4dataDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.masterTransactionsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.project4dataDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.masterTransactionsBindingSource4)).EndInit();
@@ -835,18 +834,16 @@
             this.groupBox6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.masterTransactionsBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.jan_TransactionsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.project4dataDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.febTransactionsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.marTransactionsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aprTransactionsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mayTransactionsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.junTransactionsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.julTransactionsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.augTransactionsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sepTransactionsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.octTransactionsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.novTransactionsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.decTransactionsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.octTransactionsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sepTransactionsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.augTransactionsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.julTransactionsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.junTransactionsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mayTransactionsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aprTransactionsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.marTransactionsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.febTransactionsBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -907,30 +904,29 @@
         private System.Windows.Forms.TextBox fSATextBox;
         private System.Windows.Forms.BindingSource jan_TransactionsBindingSource;
         private project4dataDataSetTableAdapters.Jan_TransactionsTableAdapter jan_TransactionsTableAdapter;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private project4dataDataSet project4dataDataSet1;
-        private System.Windows.Forms.BindingSource febTransactionsBindingSource;
-        private project4dataDataSetTableAdapters.Feb_TransactionsTableAdapter feb_TransactionsTableAdapter;
-        private System.Windows.Forms.BindingSource marTransactionsBindingSource;
-        private project4dataDataSetTableAdapters.Mar_TransactionsTableAdapter mar_TransactionsTableAdapter;
-        private System.Windows.Forms.BindingSource aprTransactionsBindingSource;
-        private project4dataDataSetTableAdapters.Apr_TransactionsTableAdapter apr_TransactionsTableAdapter;
-        private System.Windows.Forms.BindingSource mayTransactionsBindingSource;
-        private project4dataDataSetTableAdapters.May_TransactionsTableAdapter may_TransactionsTableAdapter;
-        private System.Windows.Forms.BindingSource junTransactionsBindingSource;
-        private project4dataDataSetTableAdapters.Jun_TransactionsTableAdapter jun_TransactionsTableAdapter;
-        private System.Windows.Forms.BindingSource julTransactionsBindingSource;
-        private project4dataDataSetTableAdapters.Jul_TransactionsTableAdapter jul_TransactionsTableAdapter;
-        private System.Windows.Forms.BindingSource augTransactionsBindingSource;
-        private project4dataDataSetTableAdapters.Aug_TransactionsTableAdapter aug_TransactionsTableAdapter;
-        private System.Windows.Forms.BindingSource sepTransactionsBindingSource;
-        private project4dataDataSetTableAdapters.Sep_TransactionsTableAdapter sep_TransactionsTableAdapter;
-        private System.Windows.Forms.BindingSource octTransactionsBindingSource;
-        private project4dataDataSetTableAdapters.Oct_TransactionsTableAdapter oct_TransactionsTableAdapter;
-        private System.Windows.Forms.BindingSource novTransactionsBindingSource;
-        private project4dataDataSetTableAdapters.Nov_TransactionsTableAdapter nov_TransactionsTableAdapter;
         private System.Windows.Forms.BindingSource decTransactionsBindingSource;
+        private project4dataDataSet project4dataDataSet1;
         private project4dataDataSetTableAdapters.Dec_TransactionsTableAdapter dec_TransactionsTableAdapter;
+        private project4dataDataSetTableAdapters.Nov_TransactionsTableAdapter nov_TransactionsTableAdapter;
+        private System.Windows.Forms.BindingSource novTransactionsBindingSource;
+        private project4dataDataSetTableAdapters.Oct_TransactionsTableAdapter oct_TransactionsTableAdapter;
+        private System.Windows.Forms.BindingSource octTransactionsBindingSource;
+        private project4dataDataSetTableAdapters.Sep_TransactionsTableAdapter sep_TransactionsTableAdapter;
+        private System.Windows.Forms.BindingSource sepTransactionsBindingSource;
+        private project4dataDataSetTableAdapters.Aug_TransactionsTableAdapter aug_TransactionsTableAdapter;
+        private System.Windows.Forms.BindingSource augTransactionsBindingSource;
+        private project4dataDataSetTableAdapters.Jul_TransactionsTableAdapter jul_TransactionsTableAdapter;
+        private System.Windows.Forms.BindingSource julTransactionsBindingSource;
+        private project4dataDataSetTableAdapters.Jun_TransactionsTableAdapter jun_TransactionsTableAdapter;
+        private System.Windows.Forms.BindingSource junTransactionsBindingSource;
+        private project4dataDataSetTableAdapters.May_TransactionsTableAdapter may_TransactionsTableAdapter;
+        private System.Windows.Forms.BindingSource mayTransactionsBindingSource;
+        private project4dataDataSetTableAdapters.Apr_TransactionsTableAdapter apr_TransactionsTableAdapter;
+        private System.Windows.Forms.BindingSource aprTransactionsBindingSource;
+        private project4dataDataSetTableAdapters.Mar_TransactionsTableAdapter mar_TransactionsTableAdapter;
+        private System.Windows.Forms.BindingSource marTransactionsBindingSource;
+        private project4dataDataSetTableAdapters.Feb_TransactionsTableAdapter feb_TransactionsTableAdapter;
+        private System.Windows.Forms.BindingSource febTransactionsBindingSource;
     }
 }
 
