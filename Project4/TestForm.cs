@@ -17,6 +17,23 @@ namespace Project4
             InitializeComponent();
         }
 
+        private void master_TransactionsBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.master_TransactionsBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.project4dataDataSet);
+
+        }
+
+        private void TestForm_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'project4dataDataSet.Jan_Transactions' table. You can move, or remove it, as needed.
+            this.jan_TransactionsTableAdapter.Fill(this.project4dataDataSet.Jan_Transactions);
+            // TODO: This line of code loads data into the 'project4dataDataSet.Master_Transactions' table. You can move, or remove it, as needed.
+            this.master_TransactionsTableAdapter.Fill(this.project4dataDataSet.Master_Transactions);
+
+        }
+
         
     }
 }

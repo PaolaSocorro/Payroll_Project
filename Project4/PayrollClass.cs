@@ -22,44 +22,53 @@ namespace Project4
     class PayrollClass
     {
         //MANDATORY
-        protected const decimal SOCIAL_SECURITY_TAX = .10M;
-        protected const decimal FEDERAL_INCOME_TAX = .15M;
-        protected const decimal STATE_INCOME_TAX = .5M;
+        public const decimal SOCIAL_SECURITY_TAX = .10M;
+        public const decimal FEDERAL_INCOME_TAX = .15M;
+        public const decimal STATE_INCOME_TAX = .05M;
 
         //VOLUNTARY FROM MASTER FILE
-        protected decimal dentalBenefits;
-        protected decimal medicalBenefits;
-        protected decimal lifeInsurance;
-        protected decimal savings401K;
-        protected decimal flexibleSpendingAcc;
-        protected decimal salaryRate; // rate per hour for hourly employees.
-        protected decimal salary; //Just to be used for salaried employees.
 
-        // FROM MONTHLY DATA FILE
-        protected decimal hoursWorked;
 
         //GROSS AND NET PAY
         protected decimal grossPayDecimal;
         protected decimal netPayDecimal;
+        protected decimal deductedTaxes;
+
+        public PayrollClass()
+        {
+
+        }
 
 
-        public virtual decimal grossPay(decimal rate, decimal hours)
+        public decimal grossPay(decimal rate, decimal hours)
         {
             grossPayDecimal = rate * hours;
             return grossPayDecimal;
         }
 
-        //TO BE CALCULATED BEFORE TAXES.
-        public decimal deductionPay(decimal dental, decimal medical, decimal lifeInsurance, decimal save401K, decimal fsa)
+        public decimal grossPaySalary(decimal salary)
         {
-            netPayDecimal = netPayDecimal - (dental + medical + lifeInsurance + save401K + fsa);
+            grossPayDecimal = salary;
+            return grossPayDecimal;
+        }
+
+        //TO BE CALCULATED BEFORE TAXES.
+        public decimal deductionPay(decimal benefitsMedDen, decimal lifeInsurance, decimal save401K, decimal fsa)
+        {
+            netPayDecimal = grossPayDecimal - (benefitsMedDen+ lifeInsurance + save401K + fsa);
             return netPayDecimal;
         }
 
         //TO BE CALCULATED AFTER deductionPay()
         public decimal mandatoryTaxDeductions()
         {
-            netPayDecimal = netPayDecimal * (SOCIAL_SECURITY_TAX + FEDERAL_INCOME_TAX + STATE_INCOME_TAX);
+            deductedTaxes= netPayDecimal * (SOCIAL_SECURITY_TAX + FEDERAL_INCOME_TAX + STATE_INCOME_TAX);
+            return deductedTaxes;
+        }
+
+        public decimal netPayCalc()
+        {
+            netPayDecimal = netPayDecimal - deductedTaxes;
             return netPayDecimal;
         }
 

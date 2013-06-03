@@ -72,6 +72,11 @@
     </Compile>
     <Compile Include="PayrollClass.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="project4dataDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>project4dataDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StandardForm.cs">
       <SubType>Form</SubType>
@@ -113,7 +118,19 @@
     <EmbeddedResource Include="TestForm.resx">
       <DependentUpon>TestForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.config" />
     <None Include="ClassDiagram1.cd" />
+    <None Include="project4dataDataSet.xsc">
+      <DependentUpon>project4dataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="project4dataDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>project4dataDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="project4dataDataSet.xss">
+      <DependentUpon>project4dataDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\DataSources\Project4.Properties.Resources.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

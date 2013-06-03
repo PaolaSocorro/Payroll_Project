@@ -36,7 +36,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Project4.Properties.Resources.hexaformLogo;
-            this.pictureBox1.Location = new System.Drawing.Point(79, 29);
+            this.pictureBox1.Location = new System.Drawing.Point(79, 36);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(326, 50);
             this.pictureBox1.TabIndex = 0;
