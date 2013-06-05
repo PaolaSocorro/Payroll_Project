@@ -38,6 +38,7 @@
             System.Windows.Forms.Label life_InsuranceLabel;
             System.Windows.Forms.Label _401KLabel;
             System.Windows.Forms.Label fSALabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Payroll_Form));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eXITToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,9 +48,10 @@
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.summaryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calculateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.createChecksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.monthlyPayStubsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.w2ReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.testFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,10 +62,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.processButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.decTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.project4dataDataSet = new Project4.project4dataDataSet();
             this.employee_NameComboBox = new System.Windows.Forms.ComboBox();
             this.master_TransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.project4dataDataSet = new Project4.project4dataDataSet();
             this.employeeIDTextBox = new System.Windows.Forms.TextBox();
             this.departmentTextBox = new System.Windows.Forms.TextBox();
             this.positionTextBox = new System.Windows.Forms.TextBox();
@@ -72,6 +73,7 @@
             this.life_InsuranceTextBox = new System.Windows.Forms.TextBox();
             this._401KTextBox = new System.Windows.Forms.TextBox();
             this.fSATextBox = new System.Windows.Forms.TextBox();
+            this.decTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.project4dataDataSet1 = new Project4.project4dataDataSet();
             this.masterTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.project4dataDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -114,6 +116,8 @@
             this.marTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.feb_TransactionsTableAdapter = new Project4.project4dataDataSetTableAdapters.Feb_TransactionsTableAdapter();
             this.febTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             employeeIDLabel = new System.Windows.Forms.Label();
             departmentLabel = new System.Windows.Forms.Label();
             employee_NameLabel1 = new System.Windows.Forms.Label();
@@ -125,9 +129,9 @@
             fSALabel = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.decTransactionsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.project4dataDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.master_TransactionsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.project4dataDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.decTransactionsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.project4dataDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.masterTransactionsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.project4dataDataSetBindingSource)).BeginInit();
@@ -239,6 +243,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.toolsToolStripMenuItem,
+            this.reportsToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -287,9 +292,7 @@
             this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addToolStripMenuItem1,
             this.deleteToolStripMenuItem,
-            this.summaryToolStripMenuItem,
-            this.calculateToolStripMenuItem,
-            this.createChecksToolStripMenuItem});
+            this.calculateToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
             this.toolsToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.toolsToolStripMenuItem.Text = "&Tools";
@@ -306,23 +309,34 @@
             this.deleteToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.deleteToolStripMenuItem.Text = "&Remove Employee";
             // 
-            // summaryToolStripMenuItem
-            // 
-            this.summaryToolStripMenuItem.Name = "summaryToolStripMenuItem";
-            this.summaryToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.summaryToolStripMenuItem.Text = "&Summary";
-            // 
             // calculateToolStripMenuItem
             // 
             this.calculateToolStripMenuItem.Name = "calculateToolStripMenuItem";
             this.calculateToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.calculateToolStripMenuItem.Text = "&Process";
             // 
-            // createChecksToolStripMenuItem
+            // reportsToolStripMenuItem
             // 
-            this.createChecksToolStripMenuItem.Name = "createChecksToolStripMenuItem";
-            this.createChecksToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.createChecksToolStripMenuItem.Text = "&Create Checks";
+            this.reportsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.monthlyPayStubsToolStripMenuItem,
+            this.w2ReportToolStripMenuItem});
+            this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
+            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.reportsToolStripMenuItem.Text = "&Reports";
+            // 
+            // monthlyPayStubsToolStripMenuItem
+            // 
+            this.monthlyPayStubsToolStripMenuItem.Name = "monthlyPayStubsToolStripMenuItem";
+            this.monthlyPayStubsToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.monthlyPayStubsToolStripMenuItem.Text = "Monthly Pay Stubs";
+            this.monthlyPayStubsToolStripMenuItem.Click += new System.EventHandler(this.monthlyPayStubsToolStripMenuItem_Click);
+            // 
+            // w2ReportToolStripMenuItem
+            // 
+            this.w2ReportToolStripMenuItem.Name = "w2ReportToolStripMenuItem";
+            this.w2ReportToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.w2ReportToolStripMenuItem.Text = "W-2 Report";
+            this.w2ReportToolStripMenuItem.Click += new System.EventHandler(this.w2ReportToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -331,19 +345,19 @@
             this.testFormToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "Help";
+            this.helpToolStripMenuItem.Text = "&Help";
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // testFormToolStripMenuItem
             // 
             this.testFormToolStripMenuItem.Name = "testFormToolStripMenuItem";
-            this.testFormToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.testFormToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.testFormToolStripMenuItem.Text = "Test Form";
             this.testFormToolStripMenuItem.Click += new System.EventHandler(this.testFormToolStripMenuItem_Click);
             // 
@@ -429,16 +443,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Employee Information";
             // 
-            // decTransactionsBindingSource
-            // 
-            this.decTransactionsBindingSource.DataMember = "Dec_Transactions";
-            this.decTransactionsBindingSource.DataSource = this.project4dataDataSet;
-            // 
-            // project4dataDataSet
-            // 
-            this.project4dataDataSet.DataSetName = "project4dataDataSet";
-            this.project4dataDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // employee_NameComboBox
             // 
             this.employee_NameComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.master_TransactionsBindingSource, "Employee Name", true, System.Windows.Forms.DataSourceUpdateMode.Never));
@@ -454,6 +458,11 @@
             // 
             this.master_TransactionsBindingSource.DataMember = "Master_Transactions";
             this.master_TransactionsBindingSource.DataSource = this.project4dataDataSet;
+            // 
+            // project4dataDataSet
+            // 
+            this.project4dataDataSet.DataSetName = "project4dataDataSet";
+            this.project4dataDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // employeeIDTextBox
             // 
@@ -526,6 +535,11 @@
             this.fSATextBox.ReadOnly = true;
             this.fSATextBox.Size = new System.Drawing.Size(151, 20);
             this.fSATextBox.TabIndex = 37;
+            // 
+            // decTransactionsBindingSource
+            // 
+            this.decTransactionsBindingSource.DataMember = "Dec_Transactions";
+            this.decTransactionsBindingSource.DataSource = this.project4dataDataSet;
             // 
             // project4dataDataSet1
             // 
@@ -789,6 +803,16 @@
             this.febTransactionsBindingSource.DataMember = "Feb_Transactions";
             this.febTransactionsBindingSource.DataSource = this.project4dataDataSet;
             // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
             // Payroll_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -816,9 +840,9 @@
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.decTransactionsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.project4dataDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.master_TransactionsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.project4dataDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.decTransactionsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.project4dataDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.masterTransactionsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.project4dataDataSetBindingSource)).EndInit();
@@ -863,7 +887,6 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem summaryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem calculateToolStripMenuItem;
         private System.Windows.Forms.ComboBox monthsComboBox;
         private System.Windows.Forms.Label label2;
@@ -877,7 +900,6 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.ComboBox reportComboBox;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ToolStripMenuItem createChecksToolStripMenuItem;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button reportButton;
         private System.Windows.Forms.GroupBox groupBox6;
@@ -927,6 +949,11 @@
         private System.Windows.Forms.BindingSource marTransactionsBindingSource;
         private project4dataDataSetTableAdapters.Feb_TransactionsTableAdapter feb_TransactionsTableAdapter;
         private System.Windows.Forms.BindingSource febTransactionsBindingSource;
+        private System.Windows.Forms.ToolStripMenuItem reportsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem monthlyPayStubsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem w2ReportToolStripMenuItem;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }
 

@@ -1,0 +1,5 @@
+Updates: 
+
+Check if month has been processed (yes/no) in array.
+
+Message box appears if user hits Process button without selecting a month.

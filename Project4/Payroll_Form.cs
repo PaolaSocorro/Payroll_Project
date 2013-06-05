@@ -189,7 +189,7 @@ namespace Project4
                         counter++;
 
                     }
-
+                    isMonthProcess[tableCount] = "yes";
                 }
                 
             }
@@ -220,8 +220,16 @@ namespace Project4
         {
             //dataRowReaderMaster();
             //dataRowReaderMonth();
-
-            dataRowReaderMonth();
+            try
+            {
+                dataRowReaderMonth();
+                Console.WriteLine("done");
+            }
+            catch (IndexOutOfRangeException)
+            {
+                MessageBox.Show("Please Select a Month to Process.","No Month Selected",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+                
+            }
     
         }
 
@@ -235,6 +243,18 @@ namespace Project4
         {
             About_Box myAboutForm = new About_Box();
             myAboutForm.ShowDialog();
+        }
+
+        private void w2ReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            W_2Report aW_2 = new W_2Report("Joe", 20000.0m, 380.0m, 120.0m, 50.0m);
+
+        }
+
+        private void monthlyPayStubsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PaystubReport aPSReport = new PaystubReport("Joe", 3000.0m, 100.0m, 80.0m,20.0m, 2800m);
+
         }
 
         

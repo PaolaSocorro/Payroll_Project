@@ -71,6 +71,7 @@
       <DependentUpon>Payroll_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="PayrollClass.cs" />
+    <Compile Include="PaystubReport.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="project4dataDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -78,6 +79,7 @@
       <DependentUpon>project4dataDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report.cs" />
     <Compile Include="StandardForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +92,7 @@
     <Compile Include="TestForm.Designer.cs">
       <DependentUpon>TestForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="W_2Report.cs" />
     <EmbeddedResource Include="About Box.resx">
       <DependentUpon>About Box.cs</DependentUpon>
     </EmbeddedResource>
