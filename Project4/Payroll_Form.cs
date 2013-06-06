@@ -322,18 +322,25 @@ namespace Project4
 
         private void monthlyPayStubsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < employeeIdArray.Length; i++)
+            if (monthsComboBox.SelectedIndex > -1)
             {
-                if (employeeIdArray[i] != null)
+                for (int i = 0; i < employeeIdArray.Length; i++)
                 {
-                    idNumber = employeeIdArray[i];
-                    dataRowReaderMaster();
-                    PaystubReport aPSReport = new PaystubReport(nameLastname, eGrossPay[i], socialSecurityTaxDec, fedIncomeTaxDec, stateIncomeTaxDec, eNetPay[i]);
+                    if (employeeIdArray[i] != null)
+                    {
+                        idNumber = employeeIdArray[i];
+                        dataRowReaderMaster();
+                        PaystubReport aPSReport = new PaystubReport(nameLastname, eGrossPay[i], socialSecurityTaxDec, fedIncomeTaxDec, stateIncomeTaxDec, eNetPay[i]);
+                    }
+                    else
+                    {
+                        break;
+                    }
                 }
-                else
-                {
-                    break;
-                }
+            }
+            else
+            {
+                MessageBox.Show("Please Process a month first.", "No month processed", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
         }

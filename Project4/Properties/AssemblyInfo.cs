@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Payroll Program")]
-[assembly: AssemblyDescription("A Payroll Program to calculate paystubs and w-2's for employees.")]
+[assembly: AssemblyDescription("A Payroll Program to calculate paystubs and w-2's for employees. Program by: Paola Socorro, Zixing Qiao, Qianqun Xu")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Hexaform Inc.")]
 [assembly: AssemblyProduct("Payroll for Hexaform Inc.")]

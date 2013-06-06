@@ -15,7 +15,7 @@ namespace Project4
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new splashForm());
+            Application.Run(new splashForm());//psocorro
             Application.Run(new Payroll_Form());
         }
     }
