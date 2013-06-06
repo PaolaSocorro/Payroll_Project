@@ -26,7 +26,7 @@ namespace Project4
         public const decimal FEDERAL_INCOME_TAX = .15M;
         public const decimal STATE_INCOME_TAX = .05M;
 
-        //VOLUNTARY FROM MASTER FILE
+        
 
 
         //GROSS AND NET PAY

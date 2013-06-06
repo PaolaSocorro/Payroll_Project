@@ -80,6 +80,12 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Report.cs" />
+    <Compile Include="reportFormChild.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportFormChild.Designer.cs">
+      <DependentUpon>reportFormChild.cs</DependentUpon>
+    </Compile>
     <Compile Include="StandardForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="reportFormChild.resx">
+      <DependentUpon>reportFormChild.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StandardForm.resx">
       <DependentUpon>StandardForm.cs</DependentUpon>
     </EmbeddedResource>

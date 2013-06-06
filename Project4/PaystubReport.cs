@@ -70,7 +70,9 @@ namespace Project4
 
             Name = nameString;
             GrossPay = grossPayDecimal;
-            SocialSecurityTax = socialSecurityTaxDecimal; FedIncomeTax = fedIncomeTaxDecimal; StateIncomeTax = stateIncomeTaxDecimal;
+            SocialSecurityTax = socialSecurityTaxDecimal; 
+            FedIncomeTax = fedIncomeTaxDecimal; 
+            StateIncomeTax = stateIncomeTaxDecimal;
             NetPay = netPayDecimal;
             printReport();
         }
@@ -78,16 +80,22 @@ namespace Project4
         public void printReport()
         {
 
-            PrintPreviewDialog PrintPreviewDialog1 = new PrintPreviewDialog(); PaperSize paperSize = new PaperSize("DataOrder", 470, 660);
-
-            PrintDocument Report = new PrintDocument(); Report.DefaultPageSettings.PaperSize = paperSize; PrintPreviewDialog1.Document = Report;
-            Report.PrintPage += new PrintPageEventHandler(Report_PrintPage); PrintPreviewDialog1.FormBorderStyle = FormBorderStyle.Fixed3D; PrintPreviewDialog1.ShowDialog();
+            PrintPreviewDialog PrintPreviewDialog1 = new PrintPreviewDialog();
+            PaperSize paperSize = new PaperSize("DataOrder", 470, 660);
+            PrintDocument Report = new PrintDocument(); 
+            Report.DefaultPageSettings.PaperSize = paperSize; 
+            PrintPreviewDialog1.Document = Report;
+            Report.PrintPage += new PrintPageEventHandler(Report_PrintPage); 
+            PrintPreviewDialog1.FormBorderStyle = FormBorderStyle.Fixed3D; 
+            PrintPreviewDialog1.ShowDialog();
         }
 
         public	void	Report_PrintPage(object sender,System.Drawing.Printing.PrintPageEventArgs  e)
         {
 
-            float  hozPosFloat  =  15.0f; float  verPosFoat  =  15.0f; float  leftbianJu  =  5;
+            float  hozPosFloat  =  15.0f; 
+            float  verPosFoat  =  15.0f; 
+            float  leftbianJu  =  5;
             float  topbianJu  = 5;
 
 
@@ -99,7 +107,9 @@ namespace Project4
             e.Graphics.FillRectangle(Brushes.DarkBlue,  leftbianJu,  topbianJu  + 100,  461,20);
 
 
-            e.Graphics.DrawRectangle(line,  leftbianJu,  topbianJu  + 122,  460,  60); e.Graphics.DrawRectangle(line,  leftbianJu,  topbianJu  + 122,  460,  100); e.Graphics.FillRectangle(Brushes.DarkBlue,  leftbianJu,  topbianJu  + 225,  461,20);
+            e.Graphics.DrawRectangle(line,  leftbianJu,  topbianJu  + 122,  460,  60); 
+            e.Graphics.DrawRectangle(line,  leftbianJu,  topbianJu  + 122,  460,  100); 
+            e.Graphics.FillRectangle(Brushes.DarkBlue,  leftbianJu,  topbianJu  + 225,  461,20);
 
 
             e.Graphics.DrawRectangle(line,  leftbianJu,  topbianJu  + 247,  460,  60);
@@ -155,28 +165,19 @@ namespace Project4
             //Fill  the  blank  with  data
             e.Graphics.DrawString(nameString,  new  Font("Arial",  8,  FontStyle.Regular), Brushes.Black,  hozPosFloat,  150);
 
-            e.Graphics.DrawString(grossPayDecimal.ToString(),
-            new Font("Arial", 7, FontStyle.Regular), Brushes.Black, hozPosFloat, 280);
+            e.Graphics.DrawString(grossPayDecimal.ToString(),new Font("Arial", 7, FontStyle.Regular), Brushes.Black, hozPosFloat, 280);
 
-            e.Graphics.DrawString(socialSecurityTaxDecimal.ToString()  ,
-            new Font("Arial", 6, FontStyle.Regular), Brushes.Black, hozPosFloat + 200,368);
+            e.Graphics.DrawString(socialSecurityTaxDecimal.ToString()  ,new Font("Arial", 6, FontStyle.Regular), Brushes.Black, hozPosFloat + 200,368);
 
 
-            e.Graphics.DrawString(fedIncomeTaxDecimal.ToString(),
-            new Font("Arial", 6, FontStyle.Regular), Brushes.Black, hozPosFloat + 200,388);
+            e.Graphics.DrawString(fedIncomeTaxDecimal.ToString(),new Font("Arial", 6, FontStyle.Regular), Brushes.Black, hozPosFloat + 200,388);
 
 
-            e.Graphics.DrawString(stateIncomeTaxDecimal.ToString(),
-            new Font("Arial", 6, FontStyle.Regular), Brushes.Black, hozPosFloat + 200,408);
+            e.Graphics.DrawString(stateIncomeTaxDecimal.ToString(),new Font("Arial", 6, FontStyle.Regular), Brushes.Black, hozPosFloat + 200,408);
 
 
-            e.Graphics.DrawString(netPayDecimal.ToString()  ,
-            new Font("Arial", 7, FontStyle.Regular), Brushes.Black, hozPosFloat, 605);
+            e.Graphics.DrawString(netPayDecimal.ToString(),new Font("Arial", 7, FontStyle.Regular), Brushes.Black, hozPosFloat, 605);
             }
-           
-
-
-
 
     }
 }

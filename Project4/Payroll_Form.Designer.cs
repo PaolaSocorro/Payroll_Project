@@ -41,9 +41,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Payroll_Form));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eXITToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,7 +51,6 @@
             this.w2ReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.testFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.EXITbutton = new System.Windows.Forms.Button();
             this.monthsComboBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -84,8 +80,6 @@
             this.masterTransactionsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.update401kButton = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.reportComboBox = new System.Windows.Forms.ComboBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.reportButton = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -254,31 +248,10 @@
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.eXITToolStripMenuItem,
-            this.saveToolStripMenuItem,
-            this.printToolStripMenuItem,
             this.exitToolStripMenuItem1});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "&File";
-            // 
-            // eXITToolStripMenuItem
-            // 
-            this.eXITToolStripMenuItem.Name = "eXITToolStripMenuItem";
-            this.eXITToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
-            this.eXITToolStripMenuItem.Text = "&Open";
-            // 
-            // saveToolStripMenuItem
-            // 
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
-            this.saveToolStripMenuItem.Text = "&Save";
-            // 
-            // printToolStripMenuItem
-            // 
-            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
-            this.printToolStripMenuItem.Text = "&Print";
             // 
             // exitToolStripMenuItem1
             // 
@@ -299,12 +272,14 @@
             // 
             // addToolStripMenuItem1
             // 
+            this.addToolStripMenuItem1.Enabled = false;
             this.addToolStripMenuItem1.Name = "addToolStripMenuItem1";
             this.addToolStripMenuItem1.Size = new System.Drawing.Size(172, 22);
             this.addToolStripMenuItem1.Text = "&Add Employee";
             // 
             // deleteToolStripMenuItem
             // 
+            this.deleteToolStripMenuItem.Enabled = false;
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
             this.deleteToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.deleteToolStripMenuItem.Text = "&Remove Employee";
@@ -314,6 +289,7 @@
             this.calculateToolStripMenuItem.Name = "calculateToolStripMenuItem";
             this.calculateToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.calculateToolStripMenuItem.Text = "&Process";
+            this.calculateToolStripMenuItem.Click += new System.EventHandler(this.processButton_Click);
             // 
             // reportsToolStripMenuItem
             // 
@@ -341,8 +317,7 @@
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem,
-            this.testFormToolStripMenuItem});
+            this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "&Help";
@@ -354,18 +329,11 @@
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
-            // testFormToolStripMenuItem
-            // 
-            this.testFormToolStripMenuItem.Name = "testFormToolStripMenuItem";
-            this.testFormToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
-            this.testFormToolStripMenuItem.Text = "Test Form";
-            this.testFormToolStripMenuItem.Click += new System.EventHandler(this.testFormToolStripMenuItem_Click);
-            // 
             // EXITbutton
             // 
-            this.EXITbutton.Location = new System.Drawing.Point(101, 16);
+            this.EXITbutton.Location = new System.Drawing.Point(43, 16);
             this.EXITbutton.Name = "EXITbutton";
-            this.EXITbutton.Size = new System.Drawing.Size(75, 27);
+            this.EXITbutton.Size = new System.Drawing.Size(96, 27);
             this.EXITbutton.TabIndex = 10;
             this.EXITbutton.Text = "E&xit";
             this.EXITbutton.UseVisualStyleBackColor = true;
@@ -408,9 +376,9 @@
             // 
             // processButton
             // 
-            this.processButton.Location = new System.Drawing.Point(20, 16);
+            this.processButton.Location = new System.Drawing.Point(44, 130);
             this.processButton.Name = "processButton";
-            this.processButton.Size = new System.Drawing.Size(75, 27);
+            this.processButton.Size = new System.Drawing.Size(96, 27);
             this.processButton.TabIndex = 10;
             this.processButton.Text = "&Process";
             this.processButton.UseVisualStyleBackColor = true;
@@ -563,20 +531,20 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.processButton);
             this.groupBox2.Controls.Add(this.processingTextBox);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.monthsComboBox);
             this.groupBox2.Location = new System.Drawing.Point(281, 105);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(192, 123);
+            this.groupBox2.Size = new System.Drawing.Size(192, 183);
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Month Selection";
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.processButton);
             this.groupBox3.Controls.Add(this.EXITbutton);
             this.groupBox3.Location = new System.Drawing.Point(282, 447);
             this.groupBox3.Name = "groupBox3";
@@ -596,13 +564,13 @@
             // 
             // update401kButton
             // 
+            this.update401kButton.Enabled = false;
             this.update401kButton.Location = new System.Drawing.Point(73, 16);
             this.update401kButton.Name = "update401kButton";
             this.update401kButton.Size = new System.Drawing.Size(96, 27);
             this.update401kButton.TabIndex = 10;
             this.update401kButton.Text = "&Update 401K";
             this.update401kButton.UseVisualStyleBackColor = true;
-            this.update401kButton.Click += new System.EventHandler(this.processButton_Click);
             // 
             // groupBox4
             // 
@@ -613,45 +581,25 @@
             this.groupBox4.TabIndex = 18;
             this.groupBox4.TabStop = false;
             // 
-            // reportComboBox
-            // 
-            this.reportComboBox.FormattingEnabled = true;
-            this.reportComboBox.Location = new System.Drawing.Point(29, 48);
-            this.reportComboBox.Name = "reportComboBox";
-            this.reportComboBox.Size = new System.Drawing.Size(130, 21);
-            this.reportComboBox.TabIndex = 11;
-            this.reportComboBox.SelectedIndexChanged += new System.EventHandler(this.monthsComboBox_SelectedIndexChanged);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(27, 22);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(102, 13);
-            this.label12.TabIndex = 13;
-            this.label12.Text = "Select Report Type:";
-            // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.reportButton);
-            this.groupBox5.Controls.Add(this.label12);
-            this.groupBox5.Controls.Add(this.reportComboBox);
-            this.groupBox5.Location = new System.Drawing.Point(281, 237);
+            this.groupBox5.Location = new System.Drawing.Point(281, 294);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(192, 133);
+            this.groupBox5.Size = new System.Drawing.Size(192, 76);
             this.groupBox5.TabIndex = 19;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Reports";
             // 
             // reportButton
             // 
-            this.reportButton.Location = new System.Drawing.Point(44, 88);
+            this.reportButton.Location = new System.Drawing.Point(44, 29);
             this.reportButton.Name = "reportButton";
             this.reportButton.Size = new System.Drawing.Size(96, 27);
             this.reportButton.TabIndex = 10;
-            this.reportButton.Text = "&Create Report";
+            this.reportButton.Text = "&Create W-2 Report";
             this.reportButton.UseVisualStyleBackColor = true;
-            this.reportButton.Click += new System.EventHandler(this.processButton_Click);
+            this.reportButton.Click += new System.EventHandler(this.w2ReportToolStripMenuItem_Click);
             // 
             // groupBox6
             // 
@@ -661,7 +609,7 @@
             this.groupBox6.Size = new System.Drawing.Size(191, 64);
             this.groupBox6.TabIndex = 20;
             this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Employee Checks";
+            this.groupBox6.Text = "Pay Stubs";
             // 
             // checksButton
             // 
@@ -669,9 +617,9 @@
             this.checksButton.Name = "checksButton";
             this.checksButton.Size = new System.Drawing.Size(96, 27);
             this.checksButton.TabIndex = 10;
-            this.checksButton.Text = "&Create Checks";
+            this.checksButton.Text = "&Create Paystubs";
             this.checksButton.UseVisualStyleBackColor = true;
-            this.checksButton.Click += new System.EventHandler(this.processButton_Click);
+            this.checksButton.Click += new System.EventHandler(this.monthlyPayStubsToolStripMenuItem_Click);
             // 
             // master_TransactionsTableAdapter
             // 
@@ -854,7 +802,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.masterTransactionsBindingSource1)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.masterTransactionsBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.jan_TransactionsBindingSource)).EndInit();
@@ -877,13 +824,10 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eXITToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.Button EXITbutton;
-        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
@@ -898,8 +842,6 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button update401kButton;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.ComboBox reportComboBox;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button reportButton;
         private System.Windows.Forms.GroupBox groupBox6;
@@ -914,7 +856,6 @@
         private project4dataDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingSource masterTransactionsBindingSource4;
         private System.Windows.Forms.BindingSource masterTransactionsBindingSource3;
-        private System.Windows.Forms.ToolStripMenuItem testFormToolStripMenuItem;
         private System.Windows.Forms.ComboBox employee_NameComboBox;
         private System.Windows.Forms.TextBox employeeIDTextBox;
         private System.Windows.Forms.TextBox departmentTextBox;
