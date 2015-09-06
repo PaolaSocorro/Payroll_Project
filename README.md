@@ -1,4 +1,4 @@
-Payroll_Project04
+Payroll
 =================
 
 Group Project for C# class. 
@@ -23,9 +23,11 @@ Hours worked by salaried employees are for record keeping only. Their net pay is
 medical and dental benefits are deducted first, before tax deductions. Tax is based on the subsequent amount. 
 
 All commits available at GitHub
+
 https://github.com/ZenRumi/Payroll_Project04
 
 Limitations: 
+
 Program cannot place reports in a separate window for user view before printing. 
 All forms go to print preview at once.
 program cannot create paystub per employee, one at a time. All are created at once, one after the other.
